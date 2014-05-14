@@ -24,13 +24,13 @@ def isPrime(n):
 
 def main():
     n = 1
-    p = 3
+    p = 1
     while n < NUM:
+        p += 2
         if isPrime(p):
             n += 1
-        p += 2
 
-    return p - 2
+    return p
 
 if __name__ == '__main__':
     start = timeit.default_timer()
